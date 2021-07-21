@@ -186,4 +186,5 @@
   (try+
    (System/exit (apply -main* args))
    (catch :kaocha/early-exit {exit-code :kaocha/early-exit}
+     (shutdown-agents)
      (System/exit exit-code))))
