@@ -1,0 +1,6 @@
+
+#kaocha/v1
+{:reporter [kaocha.report/documentation]
+ :plugins [:hooks]
+ :kaocha.hooks/pre-test [post-hook.kaocha/pre-test]
+ :kaocha.hooks/post-test [post-hook.kaocha/post-test]}
